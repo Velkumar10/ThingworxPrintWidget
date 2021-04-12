@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entities>
+    <ExtensionPackages>
+        <ExtensionPackage dependsOn="" description="" minimumThingWorxVersion="8.3.0" name="PrintWidget" packageVersion="1.0.0" vendor="r.velkumar10@gmail.com"> 
+        </ExtensionPackage>
+    </ExtensionPackages>
+    <Widgets>
+        <Widget name="printbutton">
+            <UIResources>
+                <FileResource description="" file="printbutton.ide.js" isDevelopment="true" isRuntime="false" type="JS"/>
+                <FileResource description="" file="printbutton.ide.css" isDevelopment="true" isRuntime="false" type="CSS"/>
+                <FileResource description="" file="printbutton.runtime.js" isDevelopment="false" isRuntime="true" type="JS"/>
+                <FileResource description="" file="printbutton.runtime.css" isDevelopment="false" isRuntime="true" type="CSS"/>
+            </UIResources>
+        </Widget>
+    </Widgets>
+</Entities>

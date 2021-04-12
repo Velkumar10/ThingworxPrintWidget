@@ -1,0 +1,105 @@
+.widget-printbutton-helper {
+    background: url(images/helper.png) top left;
+    width: 75px;
+    height: 30px;
+}
+
+.widget-printbutton {
+    text-align: center;
+}
+
+.widget-printbutton-overflow {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.widget-printbutton.roundedCorners .widget-printbutton-overflow, .widget-printbutton.roundedCorners .widget-printbutton-wrapper {
+    border-radius: 6px;
+}
+
+.widget-printbutton-wrapper {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.widget-printbutton-element {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.widget-printbutton img {
+    display: inline;
+    padding-right: 5px;
+    position:  relative;
+    vertical-align: middle;
+}
+
+.widget-printbutton.iconRight img {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+.widget-printbutton.iconOnly img {
+    padding-right: 0;
+}
+.widget-printbutton-text {
+    display: inline-block;
+    line-height: normal;
+    position:  relative;
+}
+
+.widget-printbutton-disabled, .widget-printbutton-disabled:hover, .widget-printbutton-disabled:active {
+    background: #d4d4d4 url(images/button-disabled.png) repeat-x;
+    opacity: 0.5;
+}
+
+.widget-printbutton .widget-printbutton-element img.hover {
+    display: none;
+}
+
+.widget-printbutton .widget-printbutton-element img.active {
+    display: none;
+}
+
+.widget-printbutton:hover img.default {
+    display: none;
+}
+
+.widget-printbutton:hover img.hover {
+    display: inline;
+}
+
+.widget-printbutton.active .widget-printbutton-element img.default {
+    display: none;
+}
+
+.widget-printbutton.active .widget-printbutton-element img.hover {
+    display: none;
+}
+
+.widget-printbutton.active .widget-printbutton-element img.active {
+    display: inline;
+}
+
+.widget-printbutton.singleImageOnly .widget-printbutton-element img.default {
+    display: inline !important;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .pc .widget-printbutton.hasImage .widget-printbutton-text {
+        top: -1px;
+    }
+}
+@-moz-document url-prefix() {
+    .widget-printbutton .widget-printbutton-text {
+        top: -1px;
+    }
+}
+
+.widget-printbutton.hasImage .widget-printbutton-text {
+    vertical-align: middle;
+}

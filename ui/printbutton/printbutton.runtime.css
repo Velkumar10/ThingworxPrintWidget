@@ -1,0 +1,136 @@
+.widget-printbutton .button-element {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.widget-printbutton {
+    overflow: hidden;
+}
+
+.widget-printbutton.roundedCorners, .widget-printbutton.roundedCorners .button-element {
+    border-radius: 6px;
+}
+
+.widget-printbutton img {
+    display: inline;
+    padding-right: 5px;
+    position:  relative;
+    vertical-align: middle;
+}
+
+.widget-printbutton.iconRight img {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+.widget-printbutton.iconOnly img {
+    padding-right: 0;
+}
+
+.widget-printbutton-text {
+    display: inline;
+    position:  relative;
+}
+
+.widget-printbutton-disabled, .widget-printbutton-disabled:hover, .widget-printbutton-disabled:active {
+    background: #d4d4d4 url(images/button-disabled.png) repeat-x;
+    opacity: 0.5;
+}
+
+.widget-printbutton .button-element img.hover {
+    display: none;
+}
+
+.widget-printbutton .button-element img.active {
+    display: none;
+}
+
+.widget-printbutton .button-element:hover img.default {
+    display: none;
+}
+
+.widget-printbutton .button-element:hover img.hover {
+    display: inline;
+}
+
+.widget-printbutton .button-element:active img.default {
+    display: none;
+}
+
+.widget-printbutton .button-element:active img.hover {
+    display: none;
+}
+
+.widget-printbutton .button-element:active img.active {
+    display: inline;
+}
+
+.widget-printbutton.singleImageOnly img.default {
+    display: inline !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .widget-printbutton-text {
+        vertical-align: top;
+    }
+    .mac .widget-printbutton .textsize-normal .widget-printbutton-text {
+        top: -1px;
+    }
+    .mac .widget-printbutton.hasImage .textsize-xlarge .widget-printbutton-text, .mac .widget-printbutton.hasImage .textsize-xxl .widget-printbutton-text {
+        top: -1px;
+    }
+    .pc .widget-printbutton .widget-printbutton-text {
+        top: -1px;
+    }
+    .pc .widget-printbutton.hasImage .textsize-3xl img {
+        top: -2px;
+    }
+    .pc .widget-printbutton.hasImage .textsize-xlarge .widget-printbutton-text, .pc .widget-printbutton.hasImage .textsize-xxl .widget-printbutton-text, .pc .widget-printbutton.hasImage .textsize-2xl .widget-printbutton-text {
+        top: -2px;
+    }
+    .pc .widget-printbutton.hasImage .textsize-3xl .widget-printbutton-text {
+        top: -3px;
+    }
+}
+
+@media screen and (min-width:0\0) {
+    .widget-printbutton .widget-printbutton-text, .widget-printbutton.hasImage .textsize-3xl img {
+        top: -1px;
+    }
+    .widget-printbutton.hasImage .textsize-3xl .widget-printbutton-text {
+        top: -2px;
+    }
+}
+
+@-moz-document url-prefix() {
+    .pc .widget-printbutton .widget-printbutton-text {
+        top: -1px;
+    }
+    .pc .widget-printbutton .textsize-3xl img {
+        top: -3px;
+    }
+    .pc .widget-printbutton.hasImage .textsize-3xl .widget-printbutton-text {
+        top: -4px;
+    }
+    .mac .widget-printbutton .textsize-small .widget-printbutton-text {
+        top: 1px;
+    }
+    .mac .widget-printbutton .textsize-large .widget-printbutton-text, .mac .widget-printbutton .textsize-xlarge .widget-printbutton-text, .mac .widget-printbutton .textsize-2xl .widget-printbutton-text, .mac .widget-printbutton .textsize-3xl .widget-printbutton-text {
+        top: -1px;
+    }
+    .mac .widget-printbutton.hasImage .textsize-small .widget-printbutton-text {
+        top: 0;
+    }
+    .mac .widget-printbutton.hasImage .textsize-xxl .widget-printbutton-text, .mac .widget-printbutton.hasImage .textsize-2xl .widget-printbutton-text {
+        top: -1px;
+    }
+
+}
+
+.widget-printbutton.hasImage .widget-printbutton-text {
+    vertical-align: middle;
+}
